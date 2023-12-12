@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#app {
+    margin: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+}
+
+#outputText {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+}
