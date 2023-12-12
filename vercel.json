@@ -1,11 +1,16 @@
 {
-  "name": "your-gpt-project",
-  "version": "1.0.0",
-  "scripts": {
-    "start": "vercel dev",
-    "deploy": "vercel --prod"
-  },
-  "dependencies": {
-    "node-fetch": "^2.6.1"
-  }
+  "version": 2,
+  "builds": [
+    {
+      "src": "/api/generate.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/generate",
+      "methods": ["POST"],
+      "dest": "/api/generate.js"
+    }
+  ]
 }
